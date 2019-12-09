@@ -17,15 +17,31 @@ import {
   ActivityIndicator
 } from 'react-native';
 
+
 import {
-  Header,
+
   LearnMoreLinks,
   Colors,
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { Container, Header, Content, Icon } from 'native-base';
 
 export default class HomeScreen extends React.Component{
+
+
+static navigationOptions = {
+
+    headerLeft : <Icon name = "camera-alt" />,
+    title:"Instagram",
+    headerRight:<Icon name="ios-send-outline"/>
+
+
+}
+
+
+
+
   render(){
     return(
       <View style={styles.container}>
